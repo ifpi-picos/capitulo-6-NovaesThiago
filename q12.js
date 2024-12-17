@@ -35,4 +35,3 @@ multiplicacao()
 
 console.log("A divisão dos números é :")
 divisao()
-
