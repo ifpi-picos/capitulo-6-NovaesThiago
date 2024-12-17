@@ -1,24 +1,24 @@
-function concat(){
-    let string1 = ("Hello ")
-    let string2 = ("World")
-    let result = string1.concat("", string2)
+function concat(string1, string2, result){
+    string1 = ("Hello ")
+    string2 = ("World")
+    result = string1.concat("", string2)
     console.log(result)
 }
 
-function upperCase(){
-    let texto = "hello world!"
-    let textoMaiusculo = texto.toUpperCase()
+function upperCase(texto, textoMaiusculo){
+    texto = "hello world!"
+    textoMaiusculo = texto.toUpperCase()
     console.log(textoMaiusculo)
 }
 
-function lowCase(){
-    let texto = "HELLO WORLD!"
-    let textoMinusculo = texto.toLowerCase()
+function lowCase(texto, textoMinusculo){
+    texto = "HELLO WORLD!"
+    textoMinusculo = texto.toLowerCase()
     console.log(textoMinusculo)
 }
 
-function posicaoDaLetra (){
-    let texto = "Hello World"
-    let caractere = texto.charAt(7)
+function posicaoDaLetra (texto, caractere){
+    texto = "Hello World"
+    caractere = texto.charAt(7)
     console.log(caractere)
 }

@@ -1,6 +1,6 @@
-function quadradoDoNumero (){
-    let num = Number(prompt("Digite o número: "))
-    let result = Number
+function quadradoDoNumero (num, result){
+    num = Number(prompt("Digite o número: "))
+    result = Number
 
     result = (num*num)
 
