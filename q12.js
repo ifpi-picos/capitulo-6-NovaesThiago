@@ -1,37 +1,41 @@
+function calculadora(){
 let num1 = Number(prompt("Digite o primeiro número: "))
+let operacao = prompt("DIgite a operação")
 let num2 = Number(prompt("Digite o segundo número: "))
 let result = Number
 
+switch(operacao){
+    case "+":
+        result = soma(num1,num2)
+        break;
+    case "-":
+        result = subtracao(num1, num2)
+        break;
+    case "*":
+        result = multiplicacao(num1, num2)
+        break;
+    case "/":
+        result = divisao(num1, num2)
+        break;
+}
+console.log(result)
 
-
-function soma(){
-    result = num1+num2
-    console.log(result)
 }
 
-function subtracao(){
-    result = num1-num2
-    console.log(result)
+function soma(primeiroValor, segundoValor){
+    return primeiroValor+segundoValor
 }
 
-function multiplicacao(){
-    result = num1*num2
-    console.log(result)
-}
- 
-function divisao(){
-    result = num1/num2
-    console.log(result)
+function subtracao(primeiroValor, segundoValor){
+    return primeiroValor-segundoValor
 }
 
-console.log("A soma dos numeros é:")
-soma()
+function multiplicacao(primeiroValor, segundoValor){
+    return primeiroValor*segundoValor
+}
 
-console.log("A subtração dos número é: ")
-subtracao()
+function divisao(primeiroValor, segundoValor){
+    return primeiroValor/segundoValor
+}
 
-console.log("A multiplicação dos números é: ")
-multiplicacao()
-
-console.log("A divisão dos números é :")
-divisao()
+calculadora()
