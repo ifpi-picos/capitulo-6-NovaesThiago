@@ -1,17 +1,20 @@
-//Mesmo código da quesão 3 (por ser o mesmo pedido da questão reutilizei)
+function mediaNotas (valor1, valor2, valor3){
+    let media = Number((valor1+valor2+valor3)/3)
+    let mediaFormatada = media.toFixed(2)
+    return mediaFormatada
+}
 
-
-function mediaNotas (num1, num2, num3, media, mediaFormatada){
+function entradaDeDados(num1, num2, num3){
     num1 = parseFloat(prompt("Digite a primeira nota: "))
     num2 = parseFloat(prompt("Digite a segunda nota: "))
     num3 = parseFloat(prompt("Digite a terceira nota: "))
-    media = Number
-
-    media = (num1+num2+num3)/3
-
-    mediaFormatada = media.toFixed(2)
-
-    console.log("Sua média é: ", mediaFormatada)
+    return [num1, num2, num3]
 }
 
-mediaNotas()
+function saidaDeDados(){
+    let notas = entradaDeDados()
+    let media = mediaNotas(notas[0], notas[1], notas[2])
+    console.log(media)
+}
+
+saidaDeDados()
