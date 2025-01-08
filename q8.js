@@ -6,4 +6,5 @@ function condicaoNum (){
     console.log(result)   
 }
 
+
 //codigo não vai rodar por a varievel "result" estar sendo declarada dentro da condição IF

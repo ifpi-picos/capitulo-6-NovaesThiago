@@ -22,3 +22,4 @@ function posicaoDaLetra (texto, caractere){
     caractere = texto.charAt(7)
     console.log(caractere)
 }
+

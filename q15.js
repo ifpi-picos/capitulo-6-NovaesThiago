@@ -36,4 +36,5 @@ while (resetGame!=2) {
 console.log("GAME OVER")
 
 
+
 //ainda em execução

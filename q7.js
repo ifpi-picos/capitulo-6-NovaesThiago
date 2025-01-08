@@ -7,6 +7,7 @@ function minhaVarLocal(varLocal){
 console.log(varGlobal)
 minhaVarLocal()             
 
+
 /* unica forma de acessar a varLocal é atravez da função, 
 se eu não colocar a função ele não vai encontra-la 
 pois a variavel esta sendo declarada na mesma*/

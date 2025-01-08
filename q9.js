@@ -70,3 +70,5 @@ const quadradoDoNumero = (num, result) => {
 }
 
 saidaDeDados()
+
+
