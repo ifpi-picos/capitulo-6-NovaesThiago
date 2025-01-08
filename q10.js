@@ -1,11 +1,19 @@
-function media2numeros (num1, num2, result){
+function entradaDeDados(num1, num2){
     num1 = Number(prompt("Digite a primeira nota: "))
     num2 = Number(prompt("Digite a segunda nota: "))
-    result = Number
-
-    result = (num1+num2)/2
-
-    console.log("a media das notas informadas é: ", result)
+    return[num1, num2]
 }
 
-media2numeros()
+function mediaNumeros (index){
+    let media = (index[0]+index[1])/2
+    let mediaFormatada = media.toFixed(2)
+    return mediaFormatada
+}
+
+function saidaDeDados(){
+    let numeros = entradaDeDados()
+    let result = mediaNumeros(numeros)
+    console.log(result)
+}
+
+saidaDeDados()

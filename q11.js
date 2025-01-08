@@ -37,3 +37,6 @@ function jogoDeAdivinhacao (){
 console.log("GAME OVER")
 
 jogoDeAdivinhacao()
+
+
+//ainda em execução
