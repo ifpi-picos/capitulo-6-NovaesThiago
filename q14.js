@@ -6,9 +6,16 @@ function entradaDeDados(peso, altura){
 }
 
 function calculadoraDeImc (index){
+    index = entradaDeDados
     let peso = index[0]
     let altura = index[1]
     let imc = peso/(altura*altura)
+    return imc
+}
+
+function getClassificacao(){
+
+    let imc = calculadoraDeImc()
 
     if (imc<18.5){
         return"Abaixo do peso."
@@ -33,9 +40,11 @@ function calculadoraDeImc (index){
 }
 
 function saidaDeDados(){
-    let valores = entradaDeDados()
-    let resultado = calculadoraDeImc(valores)
-    console.log(resultado)
+    entradaDeDados()
+    let resultado = calculadoraDeImc()
+    let classificacao = getClassificacao()
+    console.log("O resultado do seu IMC é: ", resultado)
+    console.log("A classificação do seu IMC é: ", classificacao)
 }
 
 saidaDeDados()
