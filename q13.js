@@ -1,10 +1,17 @@
-console.log("CONVERSOR REAL(R$) PARA DOLAR($): ")
-
-function conversorRealParaDolar (real, dolar){
-    real = Number(prompt("DIgite o valor em Real: "))
-    dolar = Number((real/5.94))
-    console.log(dolar)
+function conversorRealParaDolar (dolar){
+    dolar = (entradaDeDados()/6.11)
+    return dolar
 }
 
-conversorRealParaDolar()
+function entradaDeDados(real){
+    real = Number(prompt("Digite o valor em Real: "))
+    return real
+}
+
+function saidaDeDados(resultado){
+    resultado = conversorRealParaDolar()
+    console.log("O valor convertido em Dolar é: $", resultado)
+}
+
+saidaDeDados()
 
